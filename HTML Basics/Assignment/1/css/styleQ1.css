@@ -1,0 +1,29 @@
+.scroll-container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.scroll-text {
+  white-space: nowrap;
+  font-size: 20px;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+div {
+  border: 1px solid;
+  padding: 10px
+}
+
+div.last {
+  padding: 0px
+}
