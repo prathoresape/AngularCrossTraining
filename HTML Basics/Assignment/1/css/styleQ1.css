@@ -6,24 +6,37 @@
 .scroll-text {
   white-space: nowrap;
   font-size: 20px;
-  animation: marquee 10s linear infinite;
+  animation: rotate 10s linear infinite;
+  text-align: center;
+  /*animation: marquee 10s linear infinite;*/
 }
-
-@keyframes marquee {
+@keyframes rotate{
+  0%{
+      transform: rotate(0deg);
+  }
+  50%{
+      transform: rotate(180deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+/* @keyframes marquee {
   from {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
 
   to {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
-}
+} */
 
 div {
   border: 1px solid;
-  padding: 10px
+  padding: 10px;
 }
 
 div.last {
-  padding: 0px
+  padding: 0px;
+  align-content: center;
 }
